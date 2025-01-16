@@ -37,10 +37,10 @@ example = ["scipy", "bluepyopt", "emodelrunner>=1.2.5"]
 
 
 [project.urls]
-Homepage = "https://github.com/BlueBrain/Currentscape"
-Source = "https://github.com/BlueBrain/Currentscape"
-Repository = "https://github.com/BlueBrain/Currentscape.git"
-Tracker = "https://github.com/BlueBrain/Currentscape/issues"
+Homepage = "https://github.com/openbraininstitute/Currentscape"
+Source = "https://github.com/openbraininstitute/Currentscape"
+Repository = "https://github.com/openbraininstitute/Currentscape.git"
+Tracker = "https://github.com/openbraininstitute/Currentscape/issues"
 Documentation = "https://currentscape.readthedocs.io/en/latest"
 
 [tool.setuptools.packages.find]

@@ -300,7 +300,7 @@ Run cell and plot Currentscape
 ==============================
 
 You can see an example of how to extract currents and ionic concentractions with bluepyopt and emodelrunner in the example folder: :code:`examples/use_case`.
-Please note that you should have `bluepyopt <https://github.com/BlueBrain/BluePyOpt>`_, `emodelrunner <https://github.com/BlueBrain/EModelRunner>`_ and `NEURON <https://neuron.yale.edu/neuron/>`_ installed in order to run the example.
+Please note that you should have `bluepyopt <https://github.com/openbraininstitute/BluePyOpt>`_, `emodelrunner <https://github.com/BlueBrain/EModelRunner>`_ and `NEURON <https://neuron.yale.edu/neuron/>`_ installed in order to run the example.
 The example folder contains
 a cell,
 a script to run the cell by applying to it a step stimulus and record its voltage, current and ionic concentration traces,
