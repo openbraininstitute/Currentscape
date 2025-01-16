@@ -16,9 +16,7 @@
 
 # pylint: disable=wrong-import-position, super-with-arguments
 import numpy as np
-import matplotlib
 
-matplotlib.use("agg")  # to avoid tkinter error
 import matplotlib.pyplot as plt
 
 from currentscape.datasets import DataSet

@@ -21,7 +21,6 @@ from pathlib import Path
 import numpy as np
 import matplotlib
 
-matplotlib.use("agg")  # to avoid tkinter error
 import matplotlib.pyplot as plt
 
 import palettable as pltb

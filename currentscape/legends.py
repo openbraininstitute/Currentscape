@@ -18,7 +18,6 @@
 
 import matplotlib
 
-matplotlib.use("agg")  # to avoid tkinter error
 from matplotlib.legend_handler import HandlerTuple
 
 from currentscape.mapper import map_colors
