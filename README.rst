@@ -75,7 +75,7 @@ We are providing support on `Gitter <https://gitter.im/openbraininstitute/Curren
 Main dependencies
 =================
 
-- `Python 3.8+ <https://www.python.org/downloads/release/python-380/>`_
+- `Python 3.9+ <https://www.python.org/downloads/release/python-390/>`_
 - `Numpy <https://numpy.org/>`_ (automatically installed by pip)
 - `Palettable <https://github.com/jiffyclub/palettable>`_ (automatically installed by pip)
 
