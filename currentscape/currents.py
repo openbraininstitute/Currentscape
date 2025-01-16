@@ -22,9 +22,7 @@ that are under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication license.
 # pylint: disable=wrong-import-position, super-with-arguments
 import math
 import numpy as np
-import matplotlib
 
-matplotlib.use("agg")  # to avoid tkinter error
 import matplotlib.pyplot as plt
 
 from currentscape.datasets import DataSet

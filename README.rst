@@ -28,7 +28,7 @@ Currentscape figures plot the percentage of inward and outward ionic membrane cu
 the total inward and outward currents, as well as the voltage in function of time.
 It allows modellers to see which currents play a role at any given time during a simulation, and check in depth the current dynamics.
 
-.. image:: https://raw.githubusercontent.com/BlueBrain/Currentscape/main/doc/source/images/plot.png
+.. image:: https://raw.githubusercontent.com/openbraininstitute/Currentscape/main/doc/source/images/plot.png
 
 Citation
 ========
@@ -70,12 +70,12 @@ When you use this Currentscape software for your research, we ask you to cite th
 Support
 =======
 
-We are providing support on `Gitter <https://gitter.im/BlueBrain/Currentscape>`_. We suggest you create tickets on the `Github issue tracker <https://github.com/BlueBrain/Currentscape/issues>`_ in case you encounter problems while using the software or if you have some suggestions.
+We are providing support on `Gitter <https://gitter.im/openbraininstitute/Currentscape>`_. We suggest you create tickets on the `Github issue tracker <https://github.com/openbraininstitute/Currentscape/issues>`_ in case you encounter problems while using the software or if you have some suggestions.
 
 Main dependencies
 =================
 
-- `Python 3.8+ <https://www.python.org/downloads/release/python-380/>`_
+- `Python 3.9+ <https://www.python.org/downloads/release/python-390/>`_
 - `Numpy <https://numpy.org/>`_ (automatically installed by pip)
 - `Palettable <https://github.com/jiffyclub/palettable>`_ (automatically installed by pip)
 
@@ -209,7 +209,7 @@ When you then execute the following python code, a window should open with the c
 
 When you run this code in Python, it will generate the following currentscape plot (in a window, and on disk as quickstart_plot.png):
 
-.. image:: https://raw.githubusercontent.com/BlueBrain/Currentscape/main/doc/source/images/quickstart_plot.png
+.. image:: https://raw.githubusercontent.com/openbraininstitute/Currentscape/main/doc/source/images/quickstart_plot.png
 
 Tutorial
 ========
@@ -230,6 +230,8 @@ The part of the code in this repository developed by the EPFL Blue Brain Project
 
 Copyright (c) 2023-2024 Blue Brain Project/EPFL
 
+Copyright (c) 2025 Open Brain Institute
+
 
 .. |pypi| image:: https://img.shields.io/pypi/v/currentscape.svg
                :target: https://pypi.org/project/currentscape/
@@ -240,20 +242,20 @@ Copyright (c) 2023-2024 Blue Brain Project/EPFL
                :alt: latest documentation
 
 .. |license| image:: https://img.shields.io/pypi/l/currentscape.svg
-                  :target: https://github.com/BlueBrain/Currentscape/blob/main/LICENSE.txt
+                  :target: https://github.com/openbraininstitute/Currentscape/blob/main/LICENSE.txt
                   :alt: license
 
-.. |build| image:: https://github.com/BlueBrain/Currentscape/workflows/test.yml/badge.svg?branch=main
-                :target: https://github.com/BlueBrain/Currentscape/actions
+.. |build| image:: https://github.com/openbraininstitute/Currentscape/workflows/test.yml/badge.svg?branch=main
+                :target: https://github.com/openbraininstitute/Currentscape/actions
                 :alt: actions build status
 
-.. |coverage| image:: https://codecov.io/github/BlueBrain/Currentscape/coverage.svg?branch=main
-                   :target: https://codecov.io/gh/BlueBrain/currentscape
+.. |coverage| image:: https://codecov.io/github/openbraininstitute/Currentscape/coverage.svg?branch=main
+                   :target: https://codecov.io/gh/openbraininstitute/currentscape
                    :alt: coverage
 
 .. |gitter| image:: https://badges.gitter.im/Join%20Chat.svg
-                 :target: https://gitter.im/BlueBrain/Currentscape
-                 :alt: Join the chat at https://gitter.im/BlueBrain/Currentscape
+                 :target: https://gitter.im/openbraininstitute/Currentscape
+                 :alt: Join the chat at https://gitter.im/openbraininstitute/Currentscape
 
 .. |zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.8046484.svg
                 :target: https://doi.org/10.5281/zenodo.8046373

@@ -9,7 +9,7 @@ on:
 
 jobs:
   call-test-workflow:
-    uses: BlueBrain/Currentscape/.github/workflows/test.yml@main
+    uses: openbraininstitute/Currentscape/.github/workflows/test.yml@main
 
   build-tag-n-publish:
     name: Build, tag and publish on PyPI
