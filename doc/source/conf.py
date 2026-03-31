@@ -14,14 +14,14 @@
 # import sys
 # sys.path.insert(0, os.path.abspath("."))
 
-from pkg_resources import get_distribution
+from importlib.metadata import version as get_version
 
 # -- Project information -----------------------------------------------------
 
 project = "currentscape"
 
 # The short X.Y version
-version = get_distribution("currentscape").version
+version = get_version("currentscape")
 
 # The full version, including alpha/beta/rc tags
 release = version
