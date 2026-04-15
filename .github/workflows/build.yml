@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.64.0
+        uses: anothrNick/github-tag-action@v1
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         id: tag
         env:
@@ -48,7 +48,7 @@ jobs:
         run: echo "TAG_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ env.TAG_NAME }}
           name: ${{ env.TAG_NAME }}
