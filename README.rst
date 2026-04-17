@@ -35,7 +35,7 @@ Citation
 
 When you use this Currentscape software for your research, we ask you to cite the following publications (this includes poster presentations):
 
-.. code-block:: 
+.. code-block::
 
     @article {alonsomarder2019,
         article_type = {journal},
@@ -56,15 +56,15 @@ When you use this Currentscape software for your research, we ask you to cite th
         issn = {2050-084X},
         publisher = {eLife Sciences Publications, Ltd},
     }
-    
-    @article{currentscape, 
-        title={Currentscape}, 
-        DOI={10.5281/zenodo.8046373}, 
-        abstractNote={Currentscape is a Python tool enabling scientists to easily plot the currents in electrical neuron models. The code is based on the paper Alonso and Marder, 2019. Currentscape figures plot the percentage of inward and outward ionic membrane currents, the total inward and outward currents, as well as the voltage in function of time. It allows modellers to see which currents play a role at any given time during a simulation, and check in depth the current dynamics.}, 
-        publisher={Zenodo}, 
-        author={Jaquier, Aurélien and Tuncel, Anil and Van Geit, Werner and Alonso, Leandro M and Marder, Eve}, 
-        year={2023}, 
-        month={Jun} 
+
+    @article{currentscape,
+        title={Currentscape},
+        DOI={10.5281/zenodo.19349490},
+        abstractNote={Currentscape is a Python tool enabling scientists to easily plot the currents in electrical neuron models. The code is based on the paper Alonso and Marder, 2019. Currentscape figures plot the percentage of inward and outward ionic membrane currents, the total inward and outward currents, as well as the voltage in function of time. It allows modellers to see which currents play a role at any given time during a simulation, and check in depth the current dynamics.},
+        publisher={Zenodo},
+        author={Jaquier, Aurélien and Tuncel, Anil and Van Geit, Werner and Alonso, Leandro M and Marder, Eve},
+        year={2023},
+        month={Jun}
     }
 
 Support
@@ -257,5 +257,5 @@ Copyright (c) 2025 Open Brain Institute
                  :target: https://gitter.im/openbraininstitute/Currentscape
                  :alt: Join the chat at https://gitter.im/openbraininstitute/Currentscape
 
-.. |zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.8046484.svg
-                :target: https://doi.org/10.5281/zenodo.8046373
+.. |zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.19349490.svg
+                :target: https://doi.org/10.5281/zenodo.19349490
