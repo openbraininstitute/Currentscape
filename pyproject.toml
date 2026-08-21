@@ -31,7 +31,7 @@ classifiers=[
 ]
 
 [project.optional-dependencies]
-docs = ["sphinx", "sphinx-bluebrain-theme"]
+docs = ["sphinx>=8.2,<10", "obi-sphinx-theme>=2.0.0"]
 example = ["scipy", "bluepyopt", "emodelrunner>=1.2.5"]
 
 
