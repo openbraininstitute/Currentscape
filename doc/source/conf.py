@@ -66,16 +66,6 @@ suppress_warnings = [
 # a list of builtin themes.
 #
 html_theme = "obi_sphinx_theme"
-html_theme_options = {
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/openbraininstitute/Currentscape",
-            "icon": "fa-brands fa-github",
-        },
-    ],
-    "navbar_align": "left",
-}
 
 html_title = u"currentscape"
 
