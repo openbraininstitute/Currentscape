@@ -179,6 +179,10 @@ def autoscale_ticks_and_ylim(c, pos, neg, config_key="current"):
     max_neg = np.max(neg)
     maxi = max_pos if max_pos > max_neg else max_neg
 
+    if maxi == 0:
+        # nothing to scale to: keep the ticks and ylim of the config
+        return
+
     c[config_key]["ylim"] = (5.0 * maxi / 1e7, 5.0 * maxi)
 
     # e.g. 0.0456 -> 0.04, 723 -> 700

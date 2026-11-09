@@ -58,7 +58,7 @@ class IonConcentrations(DataSet):
 
         self.mapper = None
 
-        if self.data is not None:
+        if self.data is not None and self.data.size:
             if reorder_:
                 _, self.idxs = reorder(self.data)
 
@@ -81,8 +81,6 @@ class IonConcentrations(DataSet):
 
         ax = plt.subplot2grid((rows_tot, 1), (row, 0), rowspan=1)
 
-        x = np.arange(self.x_size)
-
         # here, use currs.idxs to have the same colors as in currs.names
         # can do it because selected_currs have same shape as self (no zero arrays removed)
         for i, ion in enumerate(self.data[self.idxs]):
@@ -90,7 +88,7 @@ class IonConcentrations(DataSet):
                 color, _, linestyle = get_colors_hatches_lines_lists(
                     c, i, cmap, self.mapper
                 )
-                ax.plot(x, ion, color=color, ls=linestyle, lw=lw, zorder=2)
+                ax.plot(self.time, ion, color=color, ls=linestyle, lw=lw, zorder=2)
 
         # legend
         # place legend here so that legend top is at the level of share plot top

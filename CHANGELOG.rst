@@ -1,6 +1,17 @@
 Changelog
 =========
 
+Unreleased
+----------
+
+Fixed
+~~~~~
+- Infinite loop in create_mapper when n_colors was 0 (e.g. empty ions_data with patterns). It now raises a ValueError, and empty ions_data is treated as no ion data.
+- Currents now raises a ValueError when given no current data.
+- Legend handles with matplotlib >= 3.9 (legendHandles was removed in favour of legend_handles).
+- Ion concentrations plotted with patterns now use the time axis instead of sample indexes.
+- Autoscaling no longer fails on all-zero data.
+
 Version 0.1.1
 -------------
 
