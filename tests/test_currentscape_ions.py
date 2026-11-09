@@ -34,6 +34,15 @@ def test_ionconcentrations_init():
     ions = IonConcentrations([[1, 2], [3, 4], [5, 6], [7, 8], [9, 0]], config)
     assert ions.mapper == 5
 
+    # data is empty and pattern use True case: should not hang nor create a mapper
+    ions = IonConcentrations([], config)
+    assert ions.mapper is None
+    assert ions.N == 0
+
+    # traces without any time point are empty as well
+    ions = IonConcentrations([[], []], config)
+    assert ions.mapper is None
+
     # data not None and reorder True
     config["ions"]["reorder"] = True
     ions = IonConcentrations([[1, 2], [3, 4]], config)
