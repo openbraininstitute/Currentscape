@@ -2,6 +2,7 @@
 
 from hypothesis import given, strategies as st
 import numpy as np
+import pytest
 
 from currentscape.mapper import (
     has_common_divisor,
@@ -24,6 +25,21 @@ def test_create_mapper():
     assert create_mapper(4, 7) == 9
     assert create_mapper(4, 5) == 7
     assert create_mapper(6, 7) == 11
+
+
+@pytest.mark.parametrize(
+    "n_colors, n_patterns",
+    [(0, 3), (0, 0), (-1, 2)],
+)
+def test_create_mapper_invalid_input(n_colors, n_patterns):
+    """Test that create_mapper raises instead of looping forever on invalid input."""
+    with pytest.raises(ValueError, match="must be at least 1"):
+        create_mapper(n_colors, n_patterns)
+
+
+def test_create_mapper_without_patterns():
+    """Test that an empty pattern list stays valid: the mapper is built without patterns."""
+    assert create_mapper(3, 0) == 1
 
 
 def test_map_colors():

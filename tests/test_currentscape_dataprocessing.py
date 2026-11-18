@@ -108,3 +108,12 @@ def test_reorder():
         new_arr, [[1, 1, 2, 9, 3, 3], [1, 1, 2, 2, 3, 3], [0, 1, 2, 0, 1, 2]]
     )
     assert np.array_equal(new_idx, [3, 0, 1])
+
+
+def test_autoscale_all_zero_keeps_config():
+    """Test that autoscale leaves the config untouched when there is nothing to scale to."""
+    c = {"ions": {"ylim": (1, 2), "ticks": [1.5]}}
+
+    autoscale_ticks_and_ylim(c, 0, 0, config_key="ions")
+
+    assert c == {"ions": {"ylim": (1, 2), "ticks": [1.5]}}

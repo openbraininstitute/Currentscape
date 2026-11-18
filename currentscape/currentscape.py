@@ -152,6 +152,9 @@ def plot_currentscape(voltage_data, currents_data, config, ions_data=None, time=
         ions_data (list of lists): ion concentrations data
         time (list): time data
     """
+    if ions_data is not None and np.size(ions_data) == 0:
+        ions_data = None
+
     # load config and set default to unspecified terms
     c = set_default_config(config)
 

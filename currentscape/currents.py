@@ -471,6 +471,9 @@ class Currents(CurrentPlottingMixin, DataSet):
             xticks=c["xaxis"]["xticks"],
         )
 
+        if self.data is None or self.data.size == 0:
+            raise ValueError("Currents cannot be instantiated with no current data")
+
         # self.idxs may be modified in the method below
         self.pos_norm, self.neg_norm, self.pos_sum, self.neg_sum = self.data_processing(
             reorder_

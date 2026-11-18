@@ -24,6 +24,18 @@ from currentscape.mapper import map_colors
 from currentscape.plotting import get_colors_hatches_lines_lists, select_color
 
 
+def _legend_handles(legend):
+    """Return the handles of a legend across matplotlib versions.
+
+    Legend.legendHandles was replaced by Legend.legend_handles in matplotlib 3.7
+    and removed in matplotlib 3.9.
+    """
+    try:
+        return legend.legend_handles
+    except AttributeError:
+        return legend.legendHandles
+
+
 def base_legend(
     ax, curr_names, bg_color, ypos, idx_names=None, handlelength=None, lines=False
 ):
@@ -103,7 +115,7 @@ def set_legend_with_hatches(ax, cmap, mapper, c, idx_names):
     leg = base_legend(ax, curr_names, bg_color, ypos, idx_names)
 
     # set legend label color & boldness, and handles color&pattern
-    for i_color, (text, handle) in enumerate(zip(leg.texts, leg.legendHandles)):
+    for i_color, (text, handle) in enumerate(zip(leg.texts, _legend_handles(leg))):
         color, hatch, _ = get_colors_hatches_lines_lists(c, i_color, cmap, mapper)
         text.set_color(color)
         text.set_weight("bold")
@@ -130,7 +142,7 @@ def set_legend_with_lines(ax, cmap, mapper, c, idx_names, names):
 
     # set legend label color & boldness, and handles color&pattern
     lw = c["lw"]
-    for i_color, (text, handle) in enumerate(zip(leg.texts, leg.legendHandles)):
+    for i_color, (text, handle) in enumerate(zip(leg.texts, _legend_handles(leg))):
         color, _, line = get_colors_hatches_lines_lists(c, i_color, cmap, mapper)
         text.set_color(color)
         text.set_weight("bold")

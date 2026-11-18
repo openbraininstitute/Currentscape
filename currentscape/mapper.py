@@ -45,6 +45,8 @@ def create_mapper(n_colors, n_patterns):
         * For two patterns to be different in a row: n>=n_patterns
         * n should not have a common divisor with either n_colors or n_patterns.
     """
+    if n_colors < 1:
+        raise ValueError(f"n_colors must be at least 1, got {n_colors}")
     mapper = n_patterns
     while has_common_divisor(n_colors, n_patterns, mapper):
         mapper += 1
