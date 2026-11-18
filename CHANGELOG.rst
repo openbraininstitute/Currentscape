@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Unreleased
-----------
+Version 1.0.28
+--------------
 
 Fixed
 ~~~~~
